@@ -1,0 +1,17 @@
+{
+  "name": "travisci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "unit": "mocha test/unit_test.js",
+    "integration": "nyc mocha test/integration_test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^13.2.0"
+  }
+}
