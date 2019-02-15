@@ -6,7 +6,7 @@
   "scripts": {
     "unit": "mocha test/unit_test.js",
     "integration": "nyc --reporter=html --reporter=text mocha test/integration_test.js",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "",
   "license": "ISC",
