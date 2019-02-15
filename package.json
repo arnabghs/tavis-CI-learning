@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "unit": "mocha test/unit_test.js",
-    "integration": "nyc mocha test/integration_test.js"
+    "integration": "nyc --reporter=html --reporter=text mocha test/integration_test.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "ISC",
